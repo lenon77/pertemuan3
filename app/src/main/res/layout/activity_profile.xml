@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:orientation="vertical">
+
+    <!-- Header / Banner Gambar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/dialog_holo_light_frame" />
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_gallery" />
+    </RelativeLayout>
+
+    <!-- Info Detail Profile -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evan Sapta"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Mobile Developer"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <!-- Email -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@android:drawable/ic_dialog_email"
+                app:tint="#1976D2" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="evan@gmail.com"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- No HP -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@android:drawable/stat_sys_phone_call"
+                app:tint="#2E7D32" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="081234567890"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Link Portofolio -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@android:drawable/ic_menu_compass"
+                app:tint="#1976D2" />
+
+            <TextView
+                android:id="@+id/tvPortfolio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="123456789"
+                android:textColor="#1976D2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Bio / Deskripsi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Senang membangun aplikasi mobile yang bermanfaat dan mudah digunakan."
+            android:textAlignment="center"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <!-- Grid 3 Tombol Aksi (Implicit Intent) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnKunjungiWebsite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1976D2"
+                android:text="Kunjungi\nWebsite"
+                android:textAllCaps="false"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnHubungiSaya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2E7D32"
+                android:text="Hubungi\nSaya"
+                android:textAllCaps="false"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnBagikanKartu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#673AB7"
+                android:text="Bagikan\nKartu"
+                android:textAllCaps="false"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
